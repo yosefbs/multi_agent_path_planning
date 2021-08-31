@@ -1,0 +1,1 @@
+{"dimension":{"item1":3,"item2":3},"obstacles":[{"row":0,"column":1},{"row":2,"column":1}],"agents":[{"start":{"row":2,"column":0},"goal":{"row":0,"column":0},"name":"agent0"},{"start":{"row":0,"column":0},"goal":{"row":2,"column":0},"name":"agent1"}]}

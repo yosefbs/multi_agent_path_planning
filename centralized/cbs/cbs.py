@@ -13,7 +13,7 @@ from math import fabs
 from itertools import combinations
 from copy import deepcopy
 
-from cbs.a_star import AStar
+from centralized.cbs.a_star import AStar
 
 class Location(object):
     def __init__(self, x=-1, y=-1):
@@ -345,6 +345,13 @@ def main():
     output["cost"] = env.compute_solution_cost(solution)
     with open(args.output, 'w') as output_yaml:
         yaml.safe_dump(output, output_yaml)
+
+
+def rest_call(env):
+    cbs = CBS(env)
+    return cbs.search()
+
+
 
 
 if __name__ == "__main__":
